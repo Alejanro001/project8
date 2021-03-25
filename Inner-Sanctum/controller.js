@@ -41,7 +41,44 @@ let controller = {
             .find({})
             .then((data)=> response.json(data))
         
-    }
+    }, 
+    getAllFighters(request, response) {
+        console.log(request)
+        Fighter
+            .find({})
+            .then((data)=> response.json(data))
+        
+    },
+    create(request, response){
+        let track = request.body
+        Track
+            .create(track)
+            .then(track=> response.json(track))
+    },
+    readById(request, response){
+        let id = request.params.id
+        Track
+            .find({})
+            .then(tracks=> response.json(tracks))
+    },
+    readAll(request, response){
+        Track
+            .find({})
+            .then(tracks=> response.json(tracks))
+    },
+    update(request, response) {
+        let track = requestbody
+        let id = request.params.id
+        Track 
+            .findByIdAndUpdate(id, track, {new: true})
+            .then(track=> response.json(track))
+    },
+    destroy(request, response) {
+        let id = request.params.id
+        Track
+            .findByIdAndDelete(id)
+            .then(()=> response.json({ok: true}))
+    },
     
 }
 

@@ -4,7 +4,7 @@ let router = new express.Router()
 let controller = require('./controller.js')
 
 router.get('/track', controller.getAllTracks)
-
+router.get('/track', controller.getAllFighters)
 router.get('/', controller.readAll)
 router.get('/:id', controller.readById)
 router.post('/', controller.create)

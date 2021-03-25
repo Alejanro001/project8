@@ -7,8 +7,8 @@ fighterModel.deleteMany({}).then( () => {
     const allFighters = websiteData.fighters
     console.log(allFighters)
 
-    trackModel.create(websiteData).then((fighters) => {
-        console.log(fighters.length, 'Application data established')
+    fighterModel.create(allFighters).then((fighters) => {
+        console.log(fighters, 'Application data established')
     })
 })
 
