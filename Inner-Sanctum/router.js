@@ -3,7 +3,7 @@ let router = new express.Router()
 
 let controller = require('./controller')
 
-router.get('/track', controller.getAllTracks)
+router.get('/tracks', controller.getAllTracks)
 
 router.get('/', controller.readAll)
 router.get('/:id', controller.readById)
