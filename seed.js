@@ -10,7 +10,7 @@ fighterModel.deleteMany({}).then(
 )
 
 trackModel.deleteMany({}).then( () => {
-    const allTracks = websiteData.Tracks
+    const allTracks = websiteData[0].Tracks
     console.log(allTracks)
     trackModel.create(allTracks).then((fighters) => {
         console.log(fighters.length, 'The tracks have been established')
