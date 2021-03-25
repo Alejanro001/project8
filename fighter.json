@@ -35,6 +35,12 @@
             "attack": "Amaterasu",
             "description": "Itachi Uchiha is a fictional character in the Naruto manga and anime series created by Masashi Kishimoto. Itachi is the older brother of Sasuke Uchiha, and is responsible for killing all the members of their clan, sparing only Sasuke.",
             "origin": "Earth Konohagakure (Member of Uchiha clan)"
+        },
+        {
+            "name": "Vegeta",
+            "attack": "Final Flash",
+            "description": "Vegeta is the prince of the fallen Saiyan race. He is the eldest son of King Vegeta, the older brother of Tarble, the husband of Bulma, the father of Trunks and Bulla, and the ancestor of Vegeta Jr.",
+            "origin": "Planet Vegeta"
         }
     ],
     "tracks": [
