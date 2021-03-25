@@ -61,11 +61,6 @@ let controller = {
             .find({})
             .then(tracks=> response.json(tracks))
     },
-    readAll(request, response){
-        Track
-            .find({})
-            .then(tracks=> response.json(tracks))
-    },
     update(request, response) {
         let track = requestbody
         let id = request.params.id
@@ -78,7 +73,7 @@ let controller = {
         Track
             .findByIdAndDelete(id)
             .then(()=> response.json({ok: true}))
-    },
+    }
     
 }
 
