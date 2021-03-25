@@ -15,12 +15,12 @@ let controller = {
         let id = request.params.id
         Fighter
             .find({})
-            .then(fighter=> response.json(fighter))
+            .then(fighters=> response.json(fighters))
     },
     readAll(request, response){
         Fighter
             .find({})
-            .then(fighter=> response.json(fighter))
+            .then(fighters=> response.json(fighters))
     },
     update(request, response) {
         let fighter = requestbody
