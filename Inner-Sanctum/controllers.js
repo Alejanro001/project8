@@ -1,4 +1,4 @@
-let Fighter = require('./model')
+let Fighter = require('./fmodel')
 let Track = require('../soundmodel')
 require('../connection')
 
@@ -15,12 +15,12 @@ let controller = {
         let id = request.params.id
         Fighter
             .find({})
-            .then(fighters=> response.json(fighters))
+            .then(fighter=> response.json(fighter))
     },
     readAll(request, response){
         Fighter
             .find({})
-            .then(fighters=> response.json(fighters))
+            .then(fighter=> response.json(fighter))
     },
     update(request, response) {
         let fighter = requestbody
