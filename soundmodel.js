@@ -1,7 +1,7 @@
 let mongoose = require('mongoose')
-let Track = mongoose.Schema
 
-const trackSchema = new mongoose.Schema({
+
+let trackSchema = new mongoose.Schema({
     name: String,
     url: String
 })
