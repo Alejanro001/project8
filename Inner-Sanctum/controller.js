@@ -5,7 +5,7 @@ require('../connection')
 
 
 let controller = {
-    create(request, response){
+    createFighter(request, response){
         let fighter = request.body
         Fighter
             .create(fighter)
@@ -49,7 +49,7 @@ let controller = {
             .then((data)=> response.json(data))
         
     },
-    create(request, response){
+    createTrack(request, response){
         let track = request.body
         Track
             .create(track)
