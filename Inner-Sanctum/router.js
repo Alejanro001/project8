@@ -8,7 +8,7 @@ router.get('/fighters', controller.getAllFighters)
 router.get('/:id', controller.readById)
 router.post('/fighters', controller.createFighter)
 router.post('/tracks', controller.createTrack)
-router.delete('/:new', controller.destroy)
+router.delete('/:id', controller.destroy)
 
 module.exports = router
 
