@@ -6,8 +6,9 @@ let controller = require('./controller.js')
 router.get('/tracks', controller.getAllTracks)
 router.get('/fighters', controller.getAllFighters)
 router.get('/:id', controller.readById)
-router.post('/', controller.create)
-router.delete('/:new', controller.destroy)
+router.post('/fighters', controller.createFighter)
+router.post('/tracks', controller.createTrack)
+router.delete('/:id', controller.destroy)
 
 module.exports = router
 
