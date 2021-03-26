@@ -29,7 +29,7 @@ let controller = {
             .findByIdAndUpdate(id, fighter, {new: true})
             .then(fighter=> response.json(fighter))
     },
-    destroy(request, response) {
+    destroyFighter(request, response) {
         let id = request.params.id
         Fighter
             .findByIdAndDelete(id)
@@ -68,7 +68,7 @@ let controller = {
             .findByIdAndUpdate(id, track, {new: true})
             .then(track=> response.json(track))
     },
-    destroy(request, response) {
+    destroyTrack(request, response) {
         let id = request.params.id
         Track
             .findByIdAndDelete(id)
