@@ -23,7 +23,7 @@ let controller = {
             .then(fighters=> response.json(fighters))
     },
     updateFighter(request, response) {
-        let fighter = requestbody
+        let fighter = request.body
         let id = request.params.id
         Fighter 
             .findByIdAndUpdate(id, fighter, {new: true})
@@ -62,7 +62,7 @@ let controller = {
             .then(tracks=> response.json(tracks))
     },
     updateTrack(request, response) {
-        let track = requestbody
+        let track = request.body
         let id = request.params.id
         Track 
             .findByIdAndUpdate(id, track, {new: true})
